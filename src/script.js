@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const API_BASE_URL = 'https://cve.projectdiscovery.io/api/v1';
-    const API_KEY = 'fbbb1f70-12d4-46d9-a47d-ac2389529f8e'; // Replace with your API key
+    const API_KEY = process.env.REACT_APP_CVEMAP_API_KEY; // Replace with your API key
 
     const filterSidebar = document.getElementById('filter-sidebar');
     const cveList = document.getElementById('cve-list');
