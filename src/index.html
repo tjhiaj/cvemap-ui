@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVEMap UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CVEMap Dashboard</h1>
+    </header>
+    <main>
+        <aside id="filter-sidebar">
+            <h2>Filters</h2>
+            <div>
+                <label for="severity-range">Severity</label>
+                <input type="range" id="severity-range" min="0" max="10" step="1" value="0,10">
+                <span id="severity-label">0 - 10</span>
+            </div>
+            <div>
+                <input type="checkbox" id="patch-available">
+                <label for="patch-available">Patch Available</label>
+            </div>
+            <button id="apply-filters">Apply Filters</button>
+        </aside>
+        <section id="results">
+            <h2>CVE Results</h2>
+            <ul id="cve-list"></ul>
+            <div id="cve-detail"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
