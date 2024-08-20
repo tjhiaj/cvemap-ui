@@ -43,7 +43,7 @@ export default App;
 // import axios from 'axios';
 
 // const BASE_URL = 'https://cve.projectdiscovery.io/api/v1';
-// const API_KEY = 'fbbb1f70-12d4-46d9-a47d-ac2389529f8e';
+// const API_KEY = process.env.REACT_APP_CVEMAP_API_KEY;
 
 // const apiClient = axios.create({
 //   baseURL: BASE_URL,
